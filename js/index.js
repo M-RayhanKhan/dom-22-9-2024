@@ -38,5 +38,22 @@ const container4 = document.querySelector('.container4');
 
 const myBtn = document.getElementById('myButton');
 myBtn.setAttribute('class', 'btn btn-primary btn-bg')
-
+myBtn.setAttribute('id', 'myId')
 myBtn.setAttribute('disabled', true);
+myBtn.removeAttribute('disabled')
+
+const linkA = document.getElementById('myLink');
+const link = linkA.getAttribute('href')
+// console.log(link);
+
+
+// container 5;
+const container5 = document.querySelector('.container5') 
+
+const p = document.createElement('p');
+p.innerText = "creating paragraph dynamically";
+container5.appendChild(p);
+const h1 = document.createElement('h1');
+h1.textContent = 'I am h1, and can i inject to html though js';
+// h1.classList.add('btn-bg')
+container5.append(h1, 'habijai khabi')
